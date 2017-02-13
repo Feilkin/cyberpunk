@@ -222,7 +222,12 @@ function state:enter()
                 if c.object.type == 'door' then
                     if c.object.properties.open == true then return false end
                 end
+
+                if c.object.properties.objectHeight and e.eyeLevel then
+                    if c.object.properties.objectHeight < e.eyeLevel then return false end
+                end
             end
+
             return true
         end
 
@@ -263,6 +268,11 @@ function state:enter()
         height = 10,
         offsetY = -5,
         viewDistance = 320,
+        eyeLevelStanding = 160,
+        eyeLevelCrouching = 80,
+        eyeLevel = 160,
+        health = 30,
+        maxHealth = 30,
         gun = {
             cooldown = 0,
             mag = 13,
@@ -274,7 +284,7 @@ function state:enter()
         name = 'player'
     }
 
-    function player.drawVision()
+    function player.drawVision(fuzzy)
         if player.vision and (#player.vision > 0) then
             for i = 1, #player.vision do
                 local a, b = player.vision[i], player.vision[i + 1]
@@ -284,7 +294,7 @@ function state:enter()
                 local x2, y2, x3, y3 = math.floor(a[1]), math.floor(a[2]),
                                        math.floor(b[1]), math.floor(b[2])
                 
-                local fuzzy = 12
+                fuzzy = fuzzy or  12
                 x2 = math.floor(x2 - math.sin(a[3]) * fuzzy)
                 y2 = math.floor(y2 - math.cos(a[3]) * fuzzy)
                 x3 = math.floor(x3 - math.sin(b[3]) * fuzzy)
@@ -330,7 +340,16 @@ function state:enter()
             love.graphics.draw(sprite.image, x + ox, y + oy)
 
             if sprite.goal then
-                --love.graphics.line(sprite.x, sprite.y, sprite.goal.x, sprite.goal.y)
+                love.graphics.line(x + ox + sprite.width / 2, y + oy + sprite.height/2, sprite.goal.x + ox + sprite.width/2, sprite.goal.y + oy + sprite.height/2)
+            end
+
+            if sprite.health < sprite.maxHealth then
+                love.graphics.setColor(255, 0, 0, 255)
+                local x1, y1 = x + ox, y + oy
+                local x2, y2 = x1 + sprite.width * (sprite.health/sprite.maxHealth), y1
+
+                love.graphics.line(x1, y1, x2, y2)
+                love.graphics.setColor(255, 255, 255, 255)
             end
         end
     end
@@ -418,6 +437,10 @@ function state:enter()
                 if item.object.type == 'door' then
                     if item.object.properties.open == true then return false end
                 end
+
+                if item.object.properties.objectHeight and (item.object.properties.objectHeight < e.height) then
+                    return false
+                end
             end
             return true
         end
@@ -429,22 +452,18 @@ function state:enter()
             local other = colInfo[1].item
             if other.type and (other.type == 'enemy') then
                 local ox, oy = colInfo[1].x1, colInfo[1].y1
-                local system = love.graphics.newParticleSystem(bloodParticle, 32)
+                local system = love.graphics.newParticleSystem(bloodParticle, 64)
                 ecs:addEntity({
                     psystem = system,
                     x = ox,
                     y = oy,
                     duration = 0.5,
                     })
-                system:setParticleLifetime(1)
+                system:setParticleLifetime(0.3)
                 system:setEmissionRate(0)
                 system:setSizeVariation(0)
                 system:setLinearAcceleration(-400, -400, 400, 400)
                 system:emit(64)
-
-                world:remove(other)
-                ecs:remove(other)
-                map.layers['entities']:removeEntity(other)
             else
                 local ox, oy = colInfo[1].x1, colInfo[1].y1
                 local system = love.graphics.newParticleSystem(ricochetParticle, 16)
@@ -459,6 +478,16 @@ function state:enter()
                 system:setSizeVariation(0)
                 system:setLinearAcceleration(-400, -400, 400, 400)
                 system:emit(16)
+            end
+
+            if other.health then
+                other.health = other.health - 2
+
+                if other.health <= 0 then
+                    world:remove(other)
+                    ecs:remove(other)
+                    map.layers['entities']:removeEntity(other)
+                end
             end
         else
             e.last_x, e.last_y = e.x, e.y
@@ -530,6 +559,8 @@ function state:enter()
                 speed = 48,
                 viewDistance = 320,
                 name = 'enemy X',
+                health = 10,
+                maxHealth = 10,
             }
             world:add(e, e.x, e.y, 15, 10)
             table.insert(entityLayer.sprites, e)
@@ -597,6 +628,7 @@ function state:update(dt)
             direction = dir,
             speed = player.gun.bullet_speed,
             bullet = true,
+            height = player.eyeLevel,
         }
         ecs:addEntity(bullet)
 
@@ -632,6 +664,18 @@ function state:update(dt)
     end
 end
 
+function state:keypressed(key, code)
+    if key == 'c' then
+        if player.crouching then
+            player.crouching = false
+            player.eyeLevel = player.eyeLevelStanding
+        else
+            player.crouching = true
+            player.eyeLevel = player.eyeLevelCrouching
+        end
+    end
+end
+
 function state:draw()
     local gw, gh = love.graphics.getDimensions()
     local mx, my = love.mouse.getPosition()
@@ -650,8 +694,12 @@ function state:draw()
     map:draw()
     ecs:update(0, renderingSystems)
 
-    camera:detach()
     love.graphics.setStencilTest()
+
+    --love.graphics.setColor(255, 0, 255, 64)
+    --player.drawVision(0)
+    --love.graphics.setColor(255, 255, 255, 255)
+    camera:detach()
 
     do
         local gunstatus = ''
