@@ -1,14 +1,14 @@
 return {
   version = "1.1",
   luaversion = "5.1",
-  tiledversion = "0.17.1",
+  tiledversion = "0.18.1",
   orientation = "orthogonal",
   renderorder = "right-down",
   width = 100,
   height = 100,
   tilewidth = 16,
   tileheight = 16,
-  nextobjectid = 183,
+  nextobjectid = 119,
   properties = {},
   tilesets = {
     {
@@ -895,6 +895,8 @@ return {
           visible = true,
           properties = {
             ["collidable"] = true,
+            ["health"] = 6,
+            ["maxHealth"] = 6,
             ["objectHeight"] = 90
           }
         },
@@ -912,6 +914,8 @@ return {
           visible = true,
           properties = {
             ["collidable"] = true,
+            ["health"] = 6,
+            ["maxHealth"] = 6,
             ["objectHeight"] = 90
           }
         },
@@ -929,6 +933,8 @@ return {
           visible = true,
           properties = {
             ["collidable"] = true,
+            ["health"] = 6,
+            ["maxHealth"] = 6,
             ["objectHeight"] = 90
           }
         },
@@ -946,6 +952,8 @@ return {
           visible = true,
           properties = {
             ["collidable"] = true,
+            ["health"] = 6,
+            ["maxHealth"] = 6,
             ["objectHeight"] = 90
           }
         },
@@ -963,6 +971,8 @@ return {
           visible = true,
           properties = {
             ["collidable"] = true,
+            ["health"] = 6,
+            ["maxHealth"] = 6,
             ["objectHeight"] = 90
           }
         },
@@ -980,6 +990,8 @@ return {
           visible = true,
           properties = {
             ["collidable"] = true,
+            ["health"] = 6,
+            ["maxHealth"] = 6,
             ["objectHeight"] = 90
           }
         },
@@ -997,6 +1009,8 @@ return {
           visible = true,
           properties = {
             ["collidable"] = true,
+            ["health"] = 6,
+            ["maxHealth"] = 6,
             ["objectHeight"] = 90
           }
         },
@@ -1014,6 +1028,8 @@ return {
           visible = true,
           properties = {
             ["collidable"] = true,
+            ["health"] = 6,
+            ["maxHealth"] = 6,
             ["objectHeight"] = 90
           }
         },
@@ -1031,6 +1047,8 @@ return {
           visible = true,
           properties = {
             ["collidable"] = true,
+            ["health"] = 6,
+            ["maxHealth"] = 6,
             ["objectHeight"] = 90
           }
         },
@@ -1048,6 +1066,8 @@ return {
           visible = true,
           properties = {
             ["collidable"] = true,
+            ["health"] = 6,
+            ["maxHealth"] = 6,
             ["objectHeight"] = 90
           }
         }
@@ -1401,775 +1421,698 @@ return {
       offsety = 0,
       draworder = "topdown",
       properties = {},
-      objects = { {
-    height = 16,
-    id = 119,
-    properties = {
-      connectsTo = "120"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 1136,
-    x = 0,
-    y = 0
-  }, {
-    height = 1584,
-    id = 120,
-    properties = {
-      connectsTo = "119,150,151,152,153"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 1136,
-    x = 0,
-    y = 16
-  }, {
-    height = 96,
-    id = 121,
-    properties = {
-      connectsTo = "131"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 144,
-    x = 1328,
-    y = 16
-  }, {
-    height = 96,
-    id = 122,
-    properties = {
-      connectsTo = "127"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 96,
-    x = 1488,
-    y = 16
-  }, {
-    height = 96,
-    id = 123,
-    properties = {
-      connectsTo = "149"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 160,
-    x = 1152,
-    y = 16
-  }, {
-    height = 80,
-    id = 124,
-    properties = {
-      connectsTo = "144"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1264,
-    y = 128
-  }, {
-    height = 80,
-    id = 125,
-    properties = {
-      connectsTo = "144"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1328,
-    y = 128
-  }, {
-    height = 16,
-    id = 126,
-    properties = {
-      connectsTo = "128,139,140"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1472,
-    y = 208
-  }, {
-    height = 16,
-    id = 127,
-    properties = {
-      connectsTo = "122,134"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1520,
-    y = 112
-  }, {
-    height = 80,
-    id = 128,
-    properties = {
-      connectsTo = "126"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 64,
-    x = 1440,
-    y = 128
-  }, {
-    height = 80,
-    id = 129,
-    properties = {
-      connectsTo = "130,131"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1392,
-    y = 128
-  }, {
-    height = 16,
-    id = 130,
-    properties = {
-      connectsTo = "129,141,148,154"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1392,
-    y = 208
-  }, {
-    height = 16,
-    id = 131,
-    properties = {
-      connectsTo = "121,129"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1392,
-    y = 112
-  }, {
-    height = 32,
-    id = 132,
-    properties = {
-      connectsTo = "136,140,142"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1504,
-    y = 224
-  }, {
-    height = 32,
-    id = 133,
-    properties = {
-      connectsTo = "137,138"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1568,
-    y = 224
-  }, {
-    height = 80,
-    id = 134,
-    properties = {
-      connectsTo = "127,136"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1520,
-    y = 128
-  }, {
-    height = 80,
-    id = 135,
-    properties = {
-      connectsTo = "137,138"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1568,
-    y = 128
-  }, {
-    height = 16,
-    id = 136,
-    properties = {
-      connectsTo = "132,134"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1520,
-    y = 208
-  }, {
-    height = 16,
-    id = 137,
-    properties = {
-      connectsTo = "133,135,138"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1568,
-    y = 208
-  }, {
-    height = 128,
-    id = 138,
-    properties = {
-      connectsTo = "133,135,137"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1584,
-    y = 128
-  }, {
-    height = 32,
-    id = 139,
-    properties = {
-      connectsTo = "126,140,141"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1440,
-    y = 224
-  }, {
-    height = 32,
-    id = 140,
-    properties = {
-      connectsTo = "126,132,139"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1488,
-    y = 224
-  }, {
-    height = 32,
-    id = 141,
-    properties = {
-      connectsTo = "130,139,154"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1424,
-    y = 224
-  }, {
-    height = 16,
-    id = 142,
-    properties = {
-      connectsTo = "132,156,164,166"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1536,
-    y = 256
-  }, {
-    height = 128,
-    id = 143,
-    properties = {
-      connectsTo = "146,149"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1216,
-    y = 128
-  }, {
-    height = 128,
-    id = 144,
-    properties = {
-      connectsTo = "124,125,145,147"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1312,
-    y = 128
-  }, {
-    height = 32,
-    id = 145,
-    properties = {
-      connectsTo = "144,148"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1328,
-    y = 224
-  }, {
-    height = 32,
-    id = 146,
-    properties = {
-      connectsTo = "143,147"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1248,
-    y = 224
-  }, {
-    height = 32,
-    id = 147,
-    properties = {
-      connectsTo = "144,146"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1264,
-    y = 224
-  }, {
-    height = 32,
-    id = 148,
-    properties = {
-      connectsTo = "130,145,154"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1376,
-    y = 224
-  }, {
-    height = 16,
-    id = 149,
-    properties = {
-      connectsTo = "123,143"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1216,
-    y = 112
-  }, {
-    height = 128,
-    id = 150,
-    properties = {
-      connectsTo = "120,151"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 64,
-    x = 1136,
-    y = 128
-  }, {
-    height = 16,
-    id = 151,
-    properties = {
-      connectsTo = "120,150,152"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 64,
-    x = 1136,
-    y = 256
-  }, {
-    height = 96,
-    id = 152,
-    properties = {
-      connectsTo = "120,151,153"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 64,
-    x = 1136,
-    y = 272
-  }, {
-    height = 1232,
-    id = 153,
-    properties = {
-      connectsTo = "120,152,180"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 64,
-    x = 1136,
-    y = 368
-  }, {
-    height = 144,
-    id = 154,
-    properties = {
-      connectsTo = "130,141,148,178"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1392,
-    y = 224
-  }, {
-    height = 1216,
-    id = 155,
-    properties = {
-      connectsTo = "179,181"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1392,
-    y = 384
-  }, {
-    height = 96,
-    id = 156,
-    properties = {
-      connectsTo = "142,158,166"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1552,
-    y = 272
-  }, {
-    height = 1216,
-    id = 157,
-    properties = {
-      connectsTo = "159,167"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1552,
-    y = 384
-  }, {
-    height = 96,
-    id = 158,
-    properties = {
-      connectsTo = "156"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1568,
-    y = 272
-  }, {
-    height = 1216,
-    id = 159,
-    properties = {
-      connectsTo = "157,182"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1568,
-    y = 384
-  }, {
-    height = 96,
-    id = 160,
-    properties = {
-      connectsTo = "162"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1440,
-    y = 272
-  }, {
-    height = 1216,
-    id = 161,
-    properties = {
-      connectsTo = "163,181"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1440,
-    y = 384
-  }, {
-    height = 96,
-    id = 162,
-    properties = {
-      connectsTo = "160,164"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1488,
-    y = 272
-  }, {
-    height = 1216,
-    id = 163,
-    properties = {
-      connectsTo = "161,165"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1488,
-    y = 384
-  }, {
-    height = 96,
-    id = 164,
-    properties = {
-      connectsTo = "142,162,166"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1504,
-    y = 272
-  }, {
-    height = 1216,
-    id = 165,
-    properties = {
-      connectsTo = "163,167"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1504,
-    y = 384
-  }, {
-    height = 96,
-    id = 166,
-    properties = {
-      connectsTo = "142,156,164"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1536,
-    y = 272
-  }, {
-    height = 1216,
-    id = 167,
-    properties = {
-      connectsTo = "157,165"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1536,
-    y = 384
-  }, {
-    height = 96,
-    id = 168,
-    properties = {
-      connectsTo = "174"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1216,
-    y = 272
-  }, {
-    height = 1216,
-    id = 169,
-    properties = {
-      connectsTo = "175,180"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 32,
-    x = 1216,
-    y = 384
-  }, {
-    height = 96,
-    id = 170,
-    properties = {
-      connectsTo = "172,176"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1312,
-    y = 272
-  }, {
-    height = 1216,
-    id = 171,
-    properties = {
-      connectsTo = "173,177"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1312,
-    y = 384
-  }, {
-    height = 96,
-    id = 172,
-    properties = {
-      connectsTo = "170,178"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1328,
-    y = 272
-  }, {
-    height = 1216,
-    id = 173,
-    properties = {
-      connectsTo = "171,179"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1328,
-    y = 384
-  }, {
-    height = 96,
-    id = 174,
-    properties = {
-      connectsTo = "168,176"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1248,
-    y = 272
-  }, {
-    height = 1216,
-    id = 175,
-    properties = {
-      connectsTo = "169,177"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1248,
-    y = 384
-  }, {
-    height = 96,
-    id = 176,
-    properties = {
-      connectsTo = "170,174"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1264,
-    y = 272
-  }, {
-    height = 1216,
-    id = 177,
-    properties = {
-      connectsTo = "171,175"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 48,
-    x = 1264,
-    y = 384
-  }, {
-    height = 96,
-    id = 178,
-    properties = {
-      connectsTo = "154,172"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1376,
-    y = 272
-  }, {
-    height = 1216,
-    id = 179,
-    properties = {
-      connectsTo = "155,173"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1376,
-    y = 384
-  }, {
-    height = 1216,
-    id = 180,
-    properties = {
-      connectsTo = "153,169"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1200,
-    y = 384
-  }, {
-    height = 1216,
-    id = 181,
-    properties = {
-      connectsTo = "155,161"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1424,
-    y = 384
-  }, {
-    height = 1216,
-    id = 182,
-    properties = {
-      connectsTo = "159"
-    },
-    rotation = 0,
-    shape = "rectangle",
-    type = "navmesh",
-    width = 16,
-    x = 1584,
-    y = 384
-  } }
+      objects = {
+        {
+          id = 52,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1488,
+          y = 16,
+          width = 96,
+          height = 96,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "54"
+          }
+        },
+        {
+          id = 54,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1520,
+          y = 112,
+          width = 32,
+          height = 144,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "52,55,76"
+          }
+        },
+        {
+          id = 55,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1216,
+          y = 224,
+          width = 304,
+          height = 32,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "54,56,57,93"
+          }
+        },
+        {
+          id = 56,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1392,
+          y = 112,
+          width = 32,
+          height = 112,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "55,61"
+          }
+        },
+        {
+          id = 57,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1216,
+          y = 112,
+          width = 32,
+          height = 112,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "55,67"
+          }
+        },
+        {
+          id = 58,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1344,
+          y = 16,
+          width = 112,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "59,60"
+          }
+        },
+        {
+          id = 59,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1440,
+          y = 32,
+          width = 32,
+          height = 64,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "58,61,62"
+          }
+        },
+        {
+          id = 60,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1328,
+          y = 32,
+          width = 32,
+          height = 64,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "61,63,58"
+          }
+        },
+        {
+          id = 61,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1360,
+          y = 80,
+          width = 80,
+          height = 32,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "56,60,59,63,62"
+          }
+        },
+        {
+          id = 62,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1440,
+          y = 96,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "59,61"
+          }
+        },
+        {
+          id = 63,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1344,
+          y = 96,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "60,61"
+          }
+        },
+        {
+          id = 64,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1168,
+          y = 16,
+          width = 128,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "66,65"
+          }
+        },
+        {
+          id = 65,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1280,
+          y = 32,
+          width = 32,
+          height = 64,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "64,67,68"
+          }
+        },
+        {
+          id = 66,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1152,
+          y = 32,
+          width = 32,
+          height = 64,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "64,67,69"
+          }
+        },
+        {
+          id = 67,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1184,
+          y = 80,
+          width = 96,
+          height = 32,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "57,65,66,68,69"
+          }
+        },
+        {
+          id = 68,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1280,
+          y = 96,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "65,67"
+          }
+        },
+        {
+          id = 69,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1168,
+          y = 96,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "67,66"
+          }
+        },
+        {
+          id = 70,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1232,
+          y = 272,
+          width = 192,
+          height = 32,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "71,73,74,82,83,84,85,86,93"
+          }
+        },
+        {
+          id = 71,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1392,
+          y = 304,
+          width = 32,
+          height = 48,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "70,72"
+          }
+        },
+        {
+          id = 72,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1232,
+          y = 352,
+          width = 176,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "71,73,87,88,89,90,91"
+          }
+        },
+        {
+          id = 73,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1216,
+          y = 304,
+          width = 32,
+          height = 48,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "70,72,74,82,91"
+          }
+        },
+        {
+          id = 74,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1216,
+          y = 288,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "70,73"
+          }
+        },
+        {
+          id = 75,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1440,
+          y = 288,
+          width = 128,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "76,79.81"
+          }
+        },
+        {
+          id = 76,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1536,
+          y = 256,
+          width = 16,
+          height = 32,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "54,75"
+          }
+        },
+        {
+          id = 79,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1504,
+          y = 304,
+          width = 64,
+          height = 64,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "75,80"
+          }
+        },
+        {
+          id = 80,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1440,
+          y = 352,
+          width = 64,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "79,81"
+          }
+        },
+        {
+          id = 81,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1440,
+          y = 304,
+          width = 16,
+          height = 48,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "75,80"
+          }
+        },
+        {
+          id = 82,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1248,
+          y = 304,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "70,73"
+          }
+        },
+        {
+          id = 83,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1280,
+          y = 304,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "70"
+          }
+        },
+        {
+          id = 84,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1312,
+          y = 304,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "70"
+          }
+        },
+        {
+          id = 85,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1344,
+          y = 304,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "70"
+          }
+        },
+        {
+          id = 86,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1376,
+          y = 304,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "70,71"
+          }
+        },
+        {
+          id = 87,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1376,
+          y = 336,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "71,72"
+          }
+        },
+        {
+          id = 88,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1344,
+          y = 336,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "72"
+          }
+        },
+        {
+          id = 89,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1312,
+          y = 336,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "72"
+          }
+        },
+        {
+          id = 90,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1280,
+          y = 336,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "72"
+          }
+        },
+        {
+          id = 91,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1248,
+          y = 336,
+          width = 16,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "72,73"
+          }
+        },
+        {
+          id = 93,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1392,
+          y = 256,
+          width = 32,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "55,70"
+          }
+        },
+        {
+          id = 101,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1312,
+          y = 160,
+          width = 16,
+          height = 64,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "55,102,103,104"
+          }
+        },
+        {
+          id = 102,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1264,
+          y = 144,
+          width = 112,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "101"
+          }
+        },
+        {
+          id = 103,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1264,
+          y = 176,
+          width = 48,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "101"
+          }
+        },
+        {
+          id = 104,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1328,
+          y = 176,
+          width = 48,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "101"
+          }
+        },
+        {
+          id = 105,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1440,
+          y = 144,
+          width = 64,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "106"
+          }
+        },
+        {
+          id = 106,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1488,
+          y = 160,
+          width = 16,
+          height = 32,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "105,107"
+          }
+        },
+        {
+          id = 107,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1472,
+          y = 176,
+          width = 16,
+          height = 48,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "55,106,108"
+          }
+        },
+        {
+          id = 108,
+          name = "",
+          type = "navmesh",
+          shape = "rectangle",
+          x = 1440,
+          y = 176,
+          width = 32,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["connectsTo"] = "107"
+          }
+        }
+      }
     }
   }
 }

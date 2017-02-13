@@ -15,6 +15,8 @@ local renderingSystems = engine.ecs.requireAll('renderer')
 local cursorCrosshair, cursorInvalid
 local bloodParticle, ricochetParticle
 
+local splatterCanvas
+
 function state:enter()
     love.graphics.setDefaultFilter('nearest', 'nearest', 4)
 
@@ -31,6 +33,8 @@ function state:enter()
     world = engine.physics.newWorld()
     map = engine.map('game/resources/maps/offices.lua', { 'bump' })
     map:bump_init(world)
+
+    splatterCanvas = love.graphics.newCanvas(map.width * map.tilewidth, map.height * map.tileheight)
 
     -- lets monkey patch because karai is a fagget
 
@@ -321,6 +325,8 @@ function state:enter()
     end
 
     function entityLayer:draw()
+        love.graphics.draw(splatterCanvas)
+        
         local sortedEntities = {}
         for i, e in ipairs(self.sprites) do
             sortedEntities[i] = e
@@ -352,6 +358,8 @@ function state:enter()
                 love.graphics.setColor(255, 255, 255, 255)
             end
         end
+
+        ecs:update(0, renderingSystems)
     end
 
     local AISystem = engine.ecs.processingSystem()
@@ -458,6 +466,7 @@ function state:enter()
                     x = ox,
                     y = oy,
                     duration = 0.5,
+                    splatter = true,
                     })
                 system:setParticleLifetime(0.3)
                 system:setEmissionRate(0)
@@ -531,6 +540,17 @@ function state:enter()
 
     function ParticleRenderingSystem:process(e, dt)
         love.graphics.draw(e.psystem, e.x, e.y)
+
+        if e.splatter then
+            local oldcanvas = love.graphics.getCanvas()
+            love.graphics.push()
+            love.graphics.origin()
+            love.graphics.setScissor()
+            love.graphics.setCanvas(splatterCanvas)
+            love.graphics.draw(e.psystem, e.x, e.y)
+            love.graphics.setCanvas(oldcanvas)
+            love.graphics.pop()
+        end
     end
 
     ecs = engine.ecs.world(
@@ -692,7 +712,7 @@ function state:draw()
     love.graphics.setStencilTest('greater', 0)
 
     map:draw()
-    ecs:update(0, renderingSystems)
+
 
     love.graphics.setStencilTest()
 

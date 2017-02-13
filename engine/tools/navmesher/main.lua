@@ -9,9 +9,10 @@ local inspect = require 'inspect'
 local min, max = math.min, math.max
 local tinsert  = table.insert
 
-local mapfilename = 'game/resources/maps/offices.lua' -- TODO: load from args?
-
-function love.load()
+function love.load(args)
+    assert(args[1], 'usage: navmesher <map file>')
+    local mapfilename = args[1]
+    if args[1] == '.' then mapfilename= args[2] end
     map = sti(mapfilename)
     navmesh = {
         -- the 'root' object
