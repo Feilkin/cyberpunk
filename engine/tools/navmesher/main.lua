@@ -9,8 +9,10 @@ local inspect = require 'inspect'
 local min, max = math.min, math.max
 local tinsert  = table.insert
 
+local mapfilename = 'game/resources/maps/offices.lua' -- TODO: load from args?
+
 function love.load()
-    map = sti('game/resources/maps/offices.lua')
+    map = sti(mapfilename)
     navmesh = {
         -- the 'root' object
         {
@@ -265,15 +267,27 @@ function love.load()
         m.properties.connectsTo = table.concat(t, ',')
     end
 
-    print(inspect(navmesh))
-
     -- patch it to the map
-    local layer = map.layers['navmesh']
+    local layer
+    local mapfile = love.filesystem.load(mapfilename)()
+
+    for _, l in ipairs(mapfile.layers) do
+        if l.name == 'navmesh' then
+            layer = l
+            break
+        end
+    end
+
+    layer.objects = navmesh
+    mapfile.nextobjectid = i
+
+    print('return ' .. inspect(mapfile))
+
+    layer = map.layers['navmesh']
 
     layer.objects = navmesh
     map:setObjectData(layer)
     map:setObjectCoordinates(layer)
-
 end
 
 function love.draw()
