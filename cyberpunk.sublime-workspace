@@ -1,0 +1,845 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"stock_",
+				"stock_amount"
+			],
+			[
+				"copy_from",
+				"copy_from_apartment"
+			],
+			[
+				"extra",
+				"extra_fields\tstatement"
+			],
+			[
+				"debt_",
+				"debt_free_price"
+			],
+			[
+				"parking_",
+				"parking_space\tstatement"
+			],
+			[
+				"ParkingSpaceC",
+				"ParkingSpaceClientNewQueueView\tclass"
+			],
+			[
+				"ParkingSpaceClient",
+				"ParkingSpaceClientNewView\tclass"
+			],
+			[
+				"Parking",
+				"ParkingSpaceEditView"
+			],
+			[
+				"parking_space",
+				"parking_space_form"
+			],
+			[
+				"Parkin",
+				"ParkingSpaceForm\tclass"
+			],
+			[
+				"btn",
+				"btn-default"
+			],
+			[
+				"buyer_",
+				"buyer_sotu\tstatement"
+			],
+			[
+				"buye",
+				"buyer_1\tstatement"
+			],
+			[
+				"buyer",
+				"buyer_2\tstatement"
+			],
+			[
+				"reser",
+				"reservation_document_form"
+			],
+			[
+				"res",
+				"reservation_price"
+			],
+			[
+				"first",
+				"firstBillModal"
+			],
+			[
+				"calc",
+				"calculate_amounts"
+			],
+			[
+				"ch",
+				"children"
+			],
+			[
+				"perc",
+				"percentage_1"
+			],
+			[
+				"firstB",
+				"firstBillModalLabel"
+			],
+			[
+				"erp",
+				"erpprofile"
+			],
+			[
+				"percentag",
+				"percentage"
+			],
+			[
+				"percenta",
+				"percentage_"
+			],
+			[
+				"perce",
+				"percentage_difference"
+			],
+			[
+				"check",
+				"check_total"
+			],
+			[
+				"amount_",
+				"amount_input_"
+			],
+			[
+				"for",
+				"for\tfor (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"left",
+				"leftover"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"buy",
+				"buyer_1"
+			],
+			[
+				"TyöAr",
+				"Työarvio"
+			],
+			[
+				"get",
+				"getcontext"
+			],
+			[
+				"total_tax",
+				"total_tax_dec\tstatement"
+			],
+			[
+				"totl",
+				"total_tax_int\tstatement"
+			],
+			[
+				"debt_ta",
+				"debt_tax\tstatement"
+			],
+			[
+				"yhtiolai",
+				"yhtiolaina_int\tstatement"
+			],
+			[
+				"debt_tax",
+				"debt_tax_dec\tstatement"
+			],
+			[
+				"debt_tax_",
+				"debt_tax_int\tstatement"
+			],
+			[
+				"tax_",
+				"tax_dec"
+			],
+			[
+				"sellin",
+				"selling_price"
+			],
+			[
+				"selling_r",
+				"selling_price_int\tstatement"
+			],
+			[
+				"selle",
+				"selling_price"
+			],
+			[
+				"sell",
+				"selling_price_dec\tstatement"
+			],
+			[
+				"selling_",
+				"selling_price_dec\tstatement"
+			],
+			[
+				"selling",
+				"selling_price_int\tstatement"
+			],
+			[
+				"as_",
+				"as_oy_vat_number"
+			],
+			[
+				"new_",
+				"new_image\tstatement"
+			],
+			[
+				"attac",
+				"attached_file\tstatement"
+			],
+			[
+				"page_",
+				"page_end\tstatement"
+			],
+			[
+				"apart",
+				"apartments_per_page\tstatement"
+			],
+			[
+				"apar",
+				"apartments_per_page\tstatement"
+			],
+			[
+				"apartm",
+				"apartments_per_page\tstatement"
+			],
+			[
+				"attach",
+				"attached_file"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"get_",
+				"get_all_files"
+			],
+			[
+				"getwi",
+				"love.graphics.getWidth"
+			],
+			[
+				"geth",
+				"love.window.getHeight"
+			],
+			[
+				"lovepo",
+				"love.graphics.polygon"
+			],
+			[
+				"current",
+				"current_length"
+			],
+			[
+				"push",
+				"love.graphics.push"
+			],
+			[
+				"lovepont",
+				"love.graphics.point"
+			],
+			[
+				"draw_tile_",
+				"draw_tile_centers"
+			],
+			[
+				"lovepoly",
+				"love.graphics.polygon"
+			],
+			[
+				"contne",
+				"content_for"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"collision",
+				"collision_vector"
+			],
+			[
+				"line",
+				"love.graphics.line"
+			],
+			[
+				"colli",
+				"collision_vector"
+			],
+			[
+				"collisi",
+				"collision_debug_system"
+			],
+			[
+				"collision_",
+				"collision_debug_system"
+			],
+			[
+				"coll",
+				"collides"
+			],
+			[
+				"coldata",
+				"coldata"
+			],
+			[
+				"collisio",
+				"collisions"
+			],
+			[
+				"emote",
+				"emote_delay"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.lua",
+			"settings":
+			{
+				"buffer_size": 116,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "close",
+		"selected_items":
+		[
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"diff",
+				"Git: Diff Tool All"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"minima",
+				"View: Toggle Minimap"
+			],
+			[
+				"colse",
+				"Project: Close"
+			],
+			[
+				"clos",
+				"Project: Close"
+			],
+			[
+				"subli",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"vmenu",
+				"View: Toggle Menu"
+			],
+			[
+				"packa insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 520.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/feikki/love/cyberpunk"
+	],
+	"file_history":
+	[
+		"/home/feikki/tyot/lehto/base/views.py",
+		"/home/feikki/tyot/lehto/api/urls.py",
+		"/home/feikki/tyot/lehto/optimi_erp/settings/base.py",
+		"/home/feikki/tyot/lehto/optimi_erp/settings/local.py",
+		"/home/feikki/tyot/lehto/apartment/views.py",
+		"/home/feikki/tyot/lehto/base/templates/apartment/parking_space_detail.html",
+		"/home/feikki/tyot/lehto/apartment/models.py",
+		"/home/feikki/tyot/lehto/apartment/urls.py",
+		"/home/feikki/tyot/lehto/base/templates/report/index.html",
+		"/home/feikki/tyot/lehto/report/views.py",
+		"/home/feikki/tyot/lehto/base/templates/apartment/edit_client.html",
+		"/home/feikki/tyot/lehto/base/templates/apartment/add_queue_client.html",
+		"/home/feikki/tyot/lehto/base/templates/apartment/new_client.html",
+		"/home/feikki/tyot/lehto/api/views.py",
+		"/home/feikki/tyot/lehto/base/templates/_layouts/new_base.html",
+		"/home/feikki/tyot/lehto/.git/rebase-apply/patch",
+		"/home/feikki/tyot/lehto/apartment/forms.py",
+		"/home/feikki/tyot/lehto/base/templates/apartment/parking_space_new.html",
+		"/home/feikki/tyot/lehto/base/templates/apartment/parking_space_index.html",
+		"/home/feikki/tyot/lehto/project/models.py",
+		"/home/feikki/tyot/lehto/base/templates/apartment/detail.html",
+		"/home/feikki/tyot/lehto/base/templates/document/index.html",
+		"/home/feikki/tyot/lehto/base/templates/apartment/parking_space_index.htm",
+		"/home/feikki/tyot/lehto/base/urls.py",
+		"/home/feikki/tyot/lehto/document/views.py",
+		"/home/feikki/tyot/lehto/README.md",
+		"/home/feikki/tyot/lehto/base/static/css/custom.css",
+		"/home/feikki/liukuma",
+		"/home/feikki/tyot/lehto/base/templates/project/edit.html",
+		"/home/feikki/tyot/lehto/base/templates/user/edit_self.html",
+		"/home/feikki/tyot/lehto/rest_api/models.py",
+		"/home/feikki/tyot/lehto/base/templates/apartment/edit.html",
+		"/home/feikki/tyot/lehto/base/templates/apartment/new.html",
+		"/home/feikki/tyot/lehto/base/forms.py",
+		"/home/feikki/tyot/lehto/base/templates/user/edit.html",
+		"/home/feikki/tyot/lehto/document/models.py",
+		"/home/feikki/tyot/lehto/base/templates/emails/file_added_notification.tpl",
+		"/home/feikki/tyot/lehto/base/templates/export/pdf_pricelist.html",
+		"/home/feikki/tyot/lehto/document/forms.py",
+		"/home/feikki/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/feikki/tyot/lehto/document/apps.py",
+		"/home/feikki/tyot/lehto/base/templates/project/new.html",
+		"/home/feikki/tyot/lehto/task_management/templatetags/poll_extras.py",
+		"/home/feikki/tyot/lehto/document/urls.py",
+		"/home/feikki/tyot/lehto/base/templates/apartment/index.html",
+		"/home/feikki/tyot/lehto/base/templates/base/login.html",
+		"/home/feikki/tyot/lehto/base/templates/_layouts/boostrap_input.html",
+		"/home/feikki/.ssh/id_rsa.pub",
+		"/home/feikki/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/feikki/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/feikki/tyot/lehto/lehto.sublime-project",
+		"/home/feikki/love/towerdefence/main.moon",
+		"/home/feikki/love/hexagonmap/main.lua",
+		"/home/feikki/love/hexagonmap/main.moon",
+		"/home/feikki/PlayOnLinux's virtual drives/Steam/drive_c/Program Files/Steam/steam_with_proxy.bat",
+		"/home/feikki/love/hexagonmap/hexagonmap.sublime-project",
+		"/home/feikki/rodeoNET/static/style.css",
+		"/home/feikki/rodeoNET/web.moon",
+		"/home/feikki/rodeoNET/views/login.moon",
+		"/home/feikki/rodeoNET/bootstrap_layout.moon",
+		"/home/feikki/rodeoNET/views/database_page.moon",
+		"/home/feikki/rodeoNET/applications/admin/models.moon",
+		"/home/feikki/rodeoNET/models.moon",
+		"/home/feikki/rodeoNET/config.moon",
+		"/home/feikki/Desktop/Hacknet.v3.011/README.txt",
+		"/home/feikki/rodeoNET/applications/admin/init.moon",
+		"/home/feikki/rodeoNET/views/admin_new_user.moon",
+		"/home/feikki/rodeoNET/views/admin_list_users.moon",
+		"/home/feikki/rodeoNET/nginx.conf",
+		"/home/feikki/rodeoNET/applications/admin/views/list_users.moon",
+		"/home/feikki/rodeoNET/applications/admin/views/init.moon",
+		"/home/feikki/rodeoNET/applications/admin/views.moon",
+		"/home/feikki/Desktop/Hearthstone.desktop",
+		"/home/feikki/rodeoNET/views/static_page.moon",
+		"/home/feikki/rodeoNET/migrations.moon",
+		"/home/feikki/rodeoNET/schemas.moon",
+		"/home/feikki/UnrealEngine/Engine/Binaries/Linux/crashinfo--pid-7549-00091AC03A0C14150009013A1740CF6A/diagnostics.txt",
+		"/home/feikki/rodeoNET/rodeoNET.sublime-project",
+		"/home/feikki/.config/sublime-text-3/Packages/Moonscripty/Moonscript.sublime-settings",
+		"/home/feikki/love/love-rpg-engine/engine/ecs/systems/ai_system.lua",
+		"/home/feikki/love/love-rpg-engine/engine/ecs/systems/collision_system.lua",
+		"/home/feikki/love/love-rpg-engine/game/gamestates/playstate.lua",
+		"/home/feikki/love/love-rpg-engine/game/ecs/entities/enemy_base.lua",
+		"/home/feikki/love/love-rpg-engine/engine/tilemap.lua",
+		"/home/feikki/love/love-rpg-engine/game/ecs/entities/player.lua",
+		"/home/feikki/love/love-rpg-engine/main.lua",
+		"/home/feikki/love/love-rpg-engine/engine/ecs/systems/enemy_renderer.lua",
+		"/home/feikki/love/love-rpg-engine/love-rpg-engine.sublime-project",
+		"/home/feikki/love/furry/main.lua",
+		"/home/feikki/.config/herbstluftwm/autostart"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 109.0,
+		"where_history":
+		[
+			"<project>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"rest_framework_docs",
+			"ErpProfile",
+			"profile",
+			"transfertax",
+			"today",
+			"debt",
+			"apartment",
+			"new_base.html",
+			"buyer=True",
+			"clientnew",
+			"today",
+			"apartment",
+			"apartement",
+			"POST",
+			"apartment",
+			"kauppakirja",
+			"sale",
+			"saledoc",
+			"objects",
+			"Apartment",
+			"apartment",
+			"clientvi",
+			"clientnew",
+			"client",
+			"apartment",
+			"Apartment",
+			"apartment",
+			"copy",
+			"apartment",
+			"Asunnon",
+			"apartment_form",
+			"new_apartment",
+			"apartment_form",
+			"Apartment",
+			"apartment",
+			"detail",
+			"firstBillModalLabel",
+			"send_mail",
+			"checkbox",
+			"bill",
+			"transfertax",
+			"asiakas",
+			"name",
+			"today",
+			"advance",
+			"käsiraha",
+			"paatoimi",
+			"contract",
+			"varainsiirto",
+			"payment",
+			"as_oy_vat_number",
+			"ytunnus",
+			"sotu",
+			"building",
+			"Jono",
+			"flatten",
+			"pdftk",
+			"buildin",
+			"huuto",
+			"Muokkaa",
+			"alert",
+			"confirm-delete",
+			".confirm-delete",
+			"format_thousand",
+			"console.log",
+			"message",
+			"detail",
+			"list",
+			"debt",
+			"rest_framework",
+			"TextField",
+			"tila",
+			"varausmaksu",
+			"total_c",
+			"totla_v",
+			"datata",
+			"add_message",
+			"message",
+			"MESSAGE_STORAGE",
+			"page ",
+			"page",
+			"page =",
+			"page",
+			"user_passes_test",
+			"mathmodf",
+			"selling_price_int",
+			"selling_price_dec",
+			"omistusosuus",
+			"nimi",
+			"company",
+			"ytunn",
+			"yhtiolaina",
+			"kauppahinta",
+			"osakke",
+			"osakkeet",
+			"now",
+			"date",
+			"ErpProfile",
+			"mcpdf",
+			"pdftk",
+			"aparments_paginator",
+			"email",
+			"FileForm",
+			"user",
+			"print",
+			"ModelMultipleChoiceField",
+			"redirect",
+			"send_mail",
+			"seller",
+			"cache",
+			"boostrap_input.html",
+			"bootstrap_input",
+			"Document",
+			"rakennuksen",
+			"alkaminen",
+			"rakennuksen alkaminen",
+			"rakennus",
+			"rakennustö",
+			"publish_to_etuovi",
+			"include \"_layouts/boostrap_input.html\"",
+			"#portalModal",
+			"Vie myyntipor",
+			"point",
+			"hex_in_map_range",
+			"print",
+			"print_Table",
+			"print_table",
+			"DataBasePage"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 116,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								116,
+								116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 111.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 80.0
+	},
+	"pinned_build_system": "Packages/SublimeLove/Love.sublime-build",
+	"project": "cyberpunk.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"view",
+				"apartment/views.py"
+			],
+			[
+				"apartments",
+				"apartment/views.py"
+			],
+			[
+				"docuview",
+				"document/views.py"
+			],
+			[
+				"document/app",
+				"document/apps.py"
+			],
+			[
+				"",
+				"bootstrap_layout.moon"
+			],
+			[
+				"co",
+				"engine/ecs/systems/collision_system.lua"
+			],
+			[
+				"pla",
+				"game/gamestates/playstate.lua"
+			],
+			[
+				"tile",
+				"engine/tilemap.lua"
+			],
+			[
+				"play",
+				"game/gamestates/playstate.lua"
+			],
+			[
+				"coll",
+				"engine/ecs/systems/collision_system.lua"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "mmo",
+		"selected_items":
+		[
+			[
+				"mmo",
+				"~/love/mmorpg/mmorpg.sublime-project"
+			],
+			[
+				"mmor",
+				"~/love/mmorpg/mmorpg.sublime-project"
+			],
+			[
+				"",
+				"~/LARP/LARP.sublime-project"
+			],
+			[
+				"var",
+				"~/VarjoBot/VarjoBot.sublime-project"
+			],
+			[
+				"tassu",
+				"~/tassu.pw/tassupw.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
