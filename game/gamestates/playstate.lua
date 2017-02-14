@@ -312,7 +312,14 @@ function state:enter()
 
     world:add(player, player.x, player.y, player.width, player.height)
 
-    map:addCustomLayer('entities', 6)
+
+    map:addCustomLayer('splatter', 4)
+    local splatterLayer = map.layers['splatter']
+    function splatterLayer:draw()
+        love.graphics.draw(splatterCanvas)
+    end
+
+    map:addCustomLayer('entities', 7)
     local entityLayer = map.layers['entities']
     entityLayer.sprites = { player }
 
@@ -325,8 +332,6 @@ function state:enter()
     end
 
     function entityLayer:draw()
-        love.graphics.draw(splatterCanvas)
-        
         local sortedEntities = {}
         for i, e in ipairs(self.sprites) do
             sortedEntities[i] = e
@@ -343,7 +348,12 @@ function state:enter()
             local ox = math.floor(sprite.offsetX or 0)
             local oy = math.floor(sprite.offsetY or 0)
 
-            love.graphics.draw(sprite.image, x + ox, y + oy)
+            if sprite.rotation then
+                ox = math.floor(ox + math.cos(sprite.rotation) * (sprite.width/2))
+                ox = math.floor(oy + math.sin(sprite.rotation) * (sprite.height/2))
+            end
+
+            love.graphics.draw(sprite.image, x + ox, y + oy, sprite.rotation)
 
             if sprite.goal then
                 love.graphics.line(x + ox + sprite.width / 2, y + oy + sprite.height/2, sprite.goal.x + ox + sprite.width/2, sprite.goal.y + oy + sprite.height/2)
@@ -437,7 +447,7 @@ function state:enter()
     function BulletSystem:process(e, dt)
         local x1, y1 = e.x, e.y
         local dS = e.speed * dt
-        local x2, y2 = x1 + math.sin(e.direction) * dS, y1 + math.cos(e.direction) * dS
+        local x2, y2 = x1 + math.cos(e.direction) * dS, y1 + math.sin(e.direction) * dS
 
         local function filter(item)
             if item == player then return false end
@@ -624,6 +634,14 @@ function state:update(dt)
     end
 
     -- shoot here
+    -- aim first xD
+    do
+        local x1, y1 = player.x + player.width/2, player.y + player.height/2
+        local x2, y2 = camera:mousePosition()
+        local dir = math.atan2(y2 - y1, x2 - x1)
+        player.rotation = dir
+    end
+
     if player.gun.cooldown > 0 then
         player.gun.cooldown = player.gun.cooldown - dt
     end
@@ -640,8 +658,7 @@ function state:update(dt)
     if love.mouse.isDown(1) and (player.gun.cooldown <= 0) and (not player.gun.reloading) then
         -- shoot
         local x1, y1 = player.x + player.width/2, player.y + player.height/2
-        local x2, y2 = camera:mousePosition()
-        local dir = math.atan2(x2 - x1, y2 - y1)
+        local dir = player.rotation
         local bullet = {
             x = x1,
             y = y1,

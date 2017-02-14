@@ -4,6 +4,94 @@
 		"selected_items":
 		[
 			[
+				"splatter",
+				"splatterLayer"
+			],
+			[
+				"load",
+				"love.filesystem.load"
+			],
+			[
+				"recta",
+				"love.graphics.rectangle"
+			],
+			[
+				"eyeLevel",
+				"eyeLevelStanding"
+			],
+			[
+				"object",
+				"objectHeight"
+			],
+			[
+				"mouseget",
+				"love.mouse.getPosition"
+			],
+			[
+				"func",
+				"function\tfunction"
+			],
+			[
+				"processing",
+				"processingSystems"
+			],
+			[
+				"Bullet",
+				"BulletRenderingSystem"
+			],
+			[
+				"wind",
+				"love.window.getWidth"
+			],
+			[
+				"print",
+				"love.graphics.print"
+			],
+			[
+				"tileIns",
+				"tileInstance"
+			],
+			[
+				"tileI",
+				"tileInstance"
+			],
+			[
+				"tileInstac",
+				"TileInstance"
+			],
+			[
+				"enemy",
+				"enemySprite"
+			],
+			[
+				"mathta",
+				"math.atan2\t(y, x)"
+			],
+			[
+				"prepa",
+				"prepareNavMesh"
+			],
+			[
+				"setc",
+				"love.graphics.setColor"
+			],
+			[
+				"loveline",
+				"love.graphics.line"
+			],
+			[
+				"newfo",
+				"love.graphics.newFont"
+			],
+			[
+				"thid",
+				"thirdparty"
+			],
+			[
+				"thrid",
+				"thirdparty"
+			],
+			[
 				"stock_",
 				"stock_amount"
 			],
@@ -315,7 +403,85 @@
 			"file": "main.lua",
 			"settings":
 			{
-				"buffer_size": 116,
+				"buffer_size": 86,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "game/gamestates/playstate.lua",
+			"settings":
+			{
+				"buffer_size": 25308,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/tools/navmesher/main.lua",
+			"settings":
+			{
+				"buffer_size": 9256,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/tools/navmesher/outfile.lua",
+			"settings":
+			{
+				"buffer_size": 160529,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "game/resources/maps/offices.lua",
+			"settings":
+			{
+				"buffer_size": 147540,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 537,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/thirdparty/hump/camera.lua",
+			"settings":
+			{
+				"buffer_size": 6067,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/loader.lua",
+			"settings":
+			{
+				"buffer_size": 410,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "engine/init.lua",
+			"settings":
+			{
+				"buffer_size": 1291,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -328,9 +494,17 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "close",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"new fi",
+				"File: New File Relative to Current View"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
 			[
 				"close",
 				"Project: Close"
@@ -401,10 +575,33 @@
 	},
 	"expanded_folders":
 	[
-		"/home/feikki/love/cyberpunk"
+		"/home/feikki/love/cyberpunk",
+		"/home/feikki/love/cyberpunk/engine",
+		"/home/feikki/love/cyberpunk/engine/tools",
+		"/home/feikki/love/cyberpunk/engine/tools/navmesher",
+		"/home/feikki/love/cyberpunk/engine/tools/padder",
+		"/home/feikki/love/cyberpunk/game",
+		"/home/feikki/love/cyberpunk/game/gamestates",
+		"/home/feikki/love/cyberpunk/game/resources",
+		"/home/feikki/love/cyberpunk/game/resources/maps",
+		"/home/feikki/love/cyberpunk/game/resources/tilesets"
 	],
 	"file_history":
 	[
+		"/home/feikki/love/cyberpunk/engine/tools/navmesher/out_test.lua",
+		"/home/feikki/love/cyberpunk/game/resources/maps/offices.lua",
+		"/home/feikki/love/cyberpunk/engine/tools/navmesher/main.lua",
+		"/home/feikki/love/cyberpunk/engine/init.lua",
+		"/home/feikki/love/cyberpunk/game/init.lua",
+		"/home/feikki/love/cyberpunk/game/gamestates/playstate.lua",
+		"/home/feikki/love/cyberpunk/engine/tools/padder/main.lua",
+		"/home/feikki/love/cyberpunk/conf.lua",
+		"/home/feikki/love/cyberpunk/engine/thirdparty/sti/init.lua",
+		"/home/feikki/love/cyberpunk/engine/thirdparty/sti/plugins/bump.lua",
+		"/home/feikki/love/cyberpunk/engine/ecs.lua",
+		"/home/feikki/love/cyberpunk/engine/game.lua",
+		"/home/feikki/love/cyberpunk/game/resources/font.bdf",
+		"/home/feikki/love/cyberpunk/cyberpunk.sublime-project",
 		"/home/feikki/tyot/lehto/base/views.py",
 		"/home/feikki/tyot/lehto/api/urls.py",
 		"/home/feikki/tyot/lehto/optimi_erp/settings/base.py",
@@ -513,6 +710,42 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cos",
+			"collidable",
+			"nav",
+			"obj",
+			"table.insert",
+			"e",
+			"drawVision",
+			"bullet",
+			"BulletRenderingSystem",
+			"BulletSystem",
+			"player.gun.cooldown",
+			"BulletSystem",
+			"dir",
+			"colInfo.item",
+			"linear",
+			"ww",
+			"player.viewDistance",
+			"0.5",
+			"8",
+			"16",
+			"object.gid",
+			"door",
+			"self",
+			"player",
+			"sprite",
+			"print",
+			"table.insert(path, {edgeX, edgeY})",
+			"path",
+			"visited",
+			"drawobjectlayer",
+			"obj",
+			"16",
+			"x",
+			"vector",
+			"timer",
+			"gamestate",
 			"rest_framework_docs",
 			"ErpProfile",
 			"profile",
@@ -604,43 +837,7 @@
 			"nimi",
 			"company",
 			"ytunn",
-			"yhtiolaina",
-			"kauppahinta",
-			"osakke",
-			"osakkeet",
-			"now",
-			"date",
-			"ErpProfile",
-			"mcpdf",
-			"pdftk",
-			"aparments_paginator",
-			"email",
-			"FileForm",
-			"user",
-			"print",
-			"ModelMultipleChoiceField",
-			"redirect",
-			"send_mail",
-			"seller",
-			"cache",
-			"boostrap_input.html",
-			"bootstrap_input",
-			"Document",
-			"rakennuksen",
-			"alkaminen",
-			"rakennuksen alkaminen",
-			"rakennus",
-			"rakennustö",
-			"publish_to_etuovi",
-			"include \"_layouts/boostrap_input.html\"",
-			"#portalModal",
-			"Vie myyntipor",
-			"point",
-			"hex_in_map_range",
-			"print",
-			"print_Table",
-			"print_table",
-			"DataBasePage"
+			"yhtiolaina"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -658,7 +855,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -667,15 +864,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 116,
+						"buffer_size": 86,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								116,
-								116
+								86,
+								86
 							]
 						],
 						"settings":
@@ -686,7 +883,267 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "game/gamestates/playstate.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11827,
+								11827
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3771.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "engine/tools/navmesher/main.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8236,
+								8236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2891.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "engine/tools/navmesher/outfile.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "game/resources/maps/offices.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 147540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								151,
+								151
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								295,
+								295
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "engine/thirdparty/hump/camera.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6067,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3406,
+								3406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1170.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/home/feikki/love/cyberpunk",
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "engine/loader.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								410,
+								410
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "engine/init.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1291,
+								1291
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -749,6 +1206,58 @@
 		"selected_items":
 		[
 			[
+				"out",
+				"engine/tools/navmesher/out_test.lua"
+			],
+			[
+				"off",
+				"game/resources/maps/offices.lua"
+			],
+			[
+				"office",
+				"game/resources/maps/offices.lua"
+			],
+			[
+				"play",
+				"game/gamestates/playstate.lua"
+			],
+			[
+				"pla",
+				"game/gamestates/playstate.lua"
+			],
+			[
+				"conf",
+				"conf.lua"
+			],
+			[
+				"",
+				"game/resources/maps/offices.lua"
+			],
+			[
+				"offi",
+				"game/resources/maps/offices.lua"
+			],
+			[
+				"offic",
+				"game/resources/maps/offices.lua"
+			],
+			[
+				"engine",
+				"engine/init.lua"
+			],
+			[
+				"offices",
+				"game/resources/maps/offices.lua"
+			],
+			[
+				"engin",
+				"engine/init.lua"
+			],
+			[
+				"main",
+				"main.lua"
+			],
+			[
 				"view",
 				"apartment/views.py"
 			],
@@ -765,24 +1274,12 @@
 				"document/apps.py"
 			],
 			[
-				"",
-				"bootstrap_layout.moon"
-			],
-			[
 				"co",
 				"engine/ecs/systems/collision_system.lua"
 			],
 			[
-				"pla",
-				"game/gamestates/playstate.lua"
-			],
-			[
 				"tile",
 				"engine/tilemap.lua"
-			],
-			[
-				"play",
-				"game/gamestates/playstate.lua"
 			],
 			[
 				"coll",
@@ -794,9 +1291,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "mmo",
+		"last_filter": "lehto",
 		"selected_items":
 		[
+			[
+				"lehto",
+				"~/tyot/lehto/lehto.sublime-project"
+			],
 			[
 				"mmo",
 				"~/love/mmorpg/mmorpg.sublime-project"
