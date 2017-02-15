@@ -1,0 +1,492 @@
+{
+  "frameRate": 24,
+  "armature": [
+    {
+      "aabb": {
+        "width": 248.28354705448243,
+        "y": -120.44563973682402,
+        "height": 220.52860607631965,
+        "x": -125.02710179597098
+      },
+      "slot": [
+        {
+          "name": "human_body_average",
+          "parent": "human_body_average",
+          "color": {}
+        },
+        {
+          "z": 1,
+          "name": "human_head_average",
+          "parent": "human_head_average",
+          "color": {}
+        },
+        {
+          "z": 2,
+          "name": "human_eyes_normal",
+          "parent": "human_head_average",
+          "color": {}
+        },
+        {
+          "z": 3,
+          "name": "human_left_foot_average",
+          "parent": "human_left_foot_average",
+          "color": {}
+        },
+        {
+          "z": 4,
+          "name": "human_right_foot_average",
+          "parent": "human_right_foot_average",
+          "color": {}
+        },
+        {
+          "z": 5,
+          "name": "human_left_hand_average",
+          "parent": "human_left_hand_average",
+          "color": {}
+        },
+        {
+          "z": 6,
+          "name": "human_right_hand_average",
+          "parent": "human_right_hand_average",
+          "color": {}
+        }
+      ],
+      "type": "Armature",
+      "name": "human_1_average",
+      "animation": [
+        {
+          "frame": [],
+          "playTimes": 0,
+          "ffd": [],
+          "slot": [],
+          "duration": 40,
+          "name": "walk",
+          "bone": [
+            {
+              "frame": [
+                {
+                  "duration": 40,
+                  "tweenEasing": null,
+                  "transform": {}
+                }
+              ],
+              "name": "root"
+            },
+            {
+              "frame": [
+                {
+                  "duration": 40,
+                  "tweenEasing": null,
+                  "transform": {}
+                }
+              ],
+              "name": "human_body_average"
+            },
+            {
+              "frame": [
+                {
+                  "curve": [
+                    0.5,
+                    0,
+                    0.5,
+                    1
+                  ],
+                  "duration": 20,
+                  "transform": {}
+                },
+                {
+                  "duration": 20,
+                  "tweenEasing": 0,
+                  "transform": {
+                    "y": 12.7173
+                  }
+                },
+                {
+                  "duration": 0,
+                  "tweenEasing": null,
+                  "transform": {
+                    "y": 0.4
+                  }
+                }
+              ],
+              "name": "human_head_average"
+            },
+            {
+              "frame": [
+                {
+                  "duration": 20,
+                  "tweenEasing": null,
+                  "transform": {}
+                },
+                {
+                  "curve": [
+                    0,
+                    0,
+                    0.5,
+                    1
+                  ],
+                  "duration": 10,
+                  "transform": {}
+                },
+                {
+                  "curve": [
+                    0,
+                    0,
+                    0.5,
+                    1
+                  ],
+                  "duration": 10,
+                  "transform": {
+                    "skX": -332.4401,
+                    "skY": -332.4401
+                  }
+                },
+                {
+                  "duration": 0,
+                  "tweenEasing": null,
+                  "transform": {
+                    "skX": 0.1713,
+                    "skY": 0.1713
+                  }
+                }
+              ],
+              "name": "human_left_foot_average"
+            },
+            {
+              "frame": [
+                {
+                  "curve": [
+                    0,
+                    0,
+                    0.5,
+                    1
+                  ],
+                  "duration": 10,
+                  "transform": {}
+                },
+                {
+                  "curve": [
+                    0,
+                    0,
+                    0.5,
+                    1
+                  ],
+                  "duration": 10,
+                  "transform": {
+                    "skX": -24.9007,
+                    "skY": -24.9007
+                  }
+                },
+                {
+                  "duration": 10,
+                  "tweenEasing": 0,
+                  "transform": {
+                    "skX": -1.5283,
+                    "skY": -1.5283
+                  }
+                },
+                {
+                  "duration": 10,
+                  "tweenEasing": null,
+                  "transform": {
+                    "skX": -1.5283,
+                    "skY": -1.5283
+                  }
+                }
+              ],
+              "name": "human_right_foot_average"
+            },
+            {
+              "frame": [
+                {
+                  "curve": [
+                    0,
+                    0,
+                    0.5,
+                    1
+                  ],
+                  "duration": 10,
+                  "transform": {
+                    "skX": -34.8142,
+                    "skY": -34.8142
+                  }
+                },
+                {
+                  "curve": [
+                    0.5,
+                    0,
+                    1,
+                    1
+                  ],
+                  "duration": 10,
+                  "transform": {
+                    "skX": -7.6229,
+                    "skY": -7.6229
+                  }
+                },
+                {
+                  "duration": 20,
+                  "tweenEasing": 0,
+                  "transform": {
+                    "skX": -34.8142,
+                    "skY": -34.8142
+                  }
+                },
+                {
+                  "duration": 0,
+                  "tweenEasing": null,
+                  "transform": {
+                    "skX": -34.8142,
+                    "skY": -34.8142
+                  }
+                }
+              ],
+              "name": "human_left_hand_average"
+            },
+            {
+              "frame": [
+                {
+                  "duration": 20,
+                  "tweenEasing": 0,
+                  "transform": {
+                    "skX": 33.0259,
+                    "skY": 33.0259
+                  }
+                },
+                {
+                  "curve": [
+                    0,
+                    0,
+                    0.5,
+                    1
+                  ],
+                  "duration": 10,
+                  "transform": {
+                    "skX": 33.0259,
+                    "skY": 33.0259
+                  }
+                },
+                {
+                  "curve": [
+                    0.5,
+                    0,
+                    1,
+                    1
+                  ],
+                  "duration": 10,
+                  "transform": {
+                    "skX": 4.2864,
+                    "skY": 4.2864
+                  }
+                },
+                {
+                  "duration": 0,
+                  "tweenEasing": null,
+                  "transform": {
+                    "skX": 33.0259,
+                    "skY": 33.0259
+                  }
+                }
+              ],
+              "name": "human_right_hand_average"
+            }
+          ]
+        }
+      ],
+      "skin": [
+        {
+          "name": "",
+          "slot": [
+            {
+              "display": [
+                {
+                  "type": "image",
+                  "name": "human_eyes_normal",
+                  "transform": {
+                    "skX": 88.2521,
+                    "y": 0.0615,
+                    "skY": 88.2521,
+                    "x": 3.608
+                  }
+                }
+              ],
+              "name": "human_eyes_normal"
+            },
+            {
+              "display": [
+                {
+                  "type": "image",
+                  "name": "human_right_hand_average",
+                  "transform": {
+                    "skX": -4.5738,
+                    "y": -0.5364,
+                    "skY": -4.5738,
+                    "x": 114.3572
+                  }
+                }
+              ],
+              "name": "human_right_hand_average"
+            },
+            {
+              "display": [
+                {
+                  "type": "image",
+                  "name": "human_right_foot_average",
+                  "transform": {
+                    "skX": -1.5283,
+                    "y": -2.8995,
+                    "skY": -1.5283,
+                    "x": 23.6754
+                  }
+                }
+              ],
+              "name": "human_right_foot_average"
+            },
+            {
+              "display": [
+                {
+                  "type": "image",
+                  "name": "human_left_foot_average",
+                  "transform": {
+                    "skX": -175.7961,
+                    "y": 1.3043,
+                    "skY": -175.7961,
+                    "x": 20.4857
+                  }
+                }
+              ],
+              "name": "human_left_foot_average"
+            },
+            {
+              "display": [
+                {
+                  "type": "image",
+                  "name": "human_body_average",
+                  "transform": {
+                    "skX": -90.5301,
+                    "y": -0.2468,
+                    "skY": -90.5301,
+                    "x": 64.5005
+                  }
+                }
+              ],
+              "name": "human_body_average"
+            },
+            {
+              "display": [
+                {
+                  "type": "image",
+                  "name": "human_left_hand_average",
+                  "transform": {
+                    "skX": 178.3911,
+                    "y": -0.1636,
+                    "skY": 178.3911,
+                    "x": 110.0677
+                  }
+                }
+              ],
+              "name": "human_left_hand_average"
+            },
+            {
+              "display": [
+                {
+                  "type": "image",
+                  "name": "human_head_average",
+                  "transform": {
+                    "skX": 88.2521,
+                    "y": -0.0083,
+                    "skY": 88.2521,
+                    "x": 5.548
+                  }
+                }
+              ],
+              "name": "human_head_average"
+            }
+          ]
+        }
+      ],
+      "defaultActions": [
+        {
+          "gotoAndPlay": "walk"
+        }
+      ],
+      "bone": [
+        {
+          "name": "root",
+          "transform": {}
+        },
+        {
+          "length": 64,
+          "transform": {
+            "skX": 90.5301,
+            "y": -65.5,
+            "skY": 90.5301,
+            "x": -0.65
+          },
+          "parent": "root",
+          "name": "human_body_average"
+        },
+        {
+          "length": 42,
+          "transform": {
+            "skX": -88.2521,
+            "y": -74.4,
+            "skY": -88.2521,
+            "x": -0.65
+          },
+          "parent": "root",
+          "name": "human_head_average"
+        },
+        {
+          "length": 44,
+          "transform": {
+            "skX": 175.8461,
+            "y": 87.9,
+            "skY": 175.8461,
+            "x": -29.15
+          },
+          "parent": "root",
+          "name": "human_left_foot_average"
+        },
+        {
+          "length": 46,
+          "transform": {
+            "skX": 1.5283,
+            "y": 90.35,
+            "skY": 1.5283,
+            "x": 25.05
+          },
+          "parent": "root",
+          "name": "human_right_foot_average"
+        },
+        {
+          "length": 111,
+          "transform": {
+            "skX": 160.2336,
+            "y": -61.65,
+            "skY": 160.2336,
+            "x": -10
+          },
+          "parent": "root",
+          "name": "human_left_hand_average"
+        },
+        {
+          "length": 115,
+          "transform": {
+            "skX": 22.5014,
+            "y": -61.2,
+            "skY": 22.5014,
+            "x": 5.9
+          },
+          "parent": "root",
+          "name": "human_right_hand_average"
+        }
+      ],
+      "frameRate": 24,
+      "ik": []
+    }
+  ],
+  "isGlobal": 0,
+  "name": "human_1_average",
+  "version": "5.0"
+}
