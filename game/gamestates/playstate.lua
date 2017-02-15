@@ -285,7 +285,8 @@ function state:enter()
             reload_time = 2,
             bullet_speed = 600,
         },
-        name = 'player'
+        name = 'player',
+        animation = engine.animation('game/resources/sprites/human_average'),
     }
 
     function player.drawVision(fuzzy)
