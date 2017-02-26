@@ -24,4 +24,7 @@ engine.ecs       = require(cwd .. 'thirdparty.tiny')           -- https://github
 -- the game loader
 engine.load = require(cwd .. 'loader')
 
+-- skeletal animations
+engine.skeleton = require(cwd .. 'skeleton')
+
 return engine

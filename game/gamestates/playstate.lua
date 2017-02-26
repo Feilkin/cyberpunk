@@ -18,7 +18,7 @@ local bloodParticle, ricochetParticle
 local splatterCanvas
 
 function state:enter()
-    love.graphics.setDefaultFilter('nearest', 'nearest', 4)
+    love.graphics.setDefaultFilter('linear', 'linear', 4)
 
     font = love.graphics.newFont('game/resources/font.bdf', 11)
     love.graphics.setFont(font)
@@ -286,8 +286,11 @@ function state:enter()
             bullet_speed = 600,
         },
         name = 'player',
-        animation = engine.animation('game/resources/sprites/human_average'),
+        actor = engine.skeleton.newActor(
+            'game/resources/sprites/human_1_average_ske.json',
+            'game/resources/sprites/human_1_average_tex.json'),
     }
+    player.actor:GetTransformer():SetPower('walk', 1)
 
     function player.drawVision(fuzzy)
         if player.vision and (#player.vision > 0) then
@@ -349,12 +352,7 @@ function state:enter()
             local ox = math.floor(sprite.offsetX or 0)
             local oy = math.floor(sprite.offsetY or 0)
 
-            if sprite.rotation then
-                ox = math.floor(ox + math.cos(sprite.rotation) * (sprite.width/2))
-                ox = math.floor(oy + math.sin(sprite.rotation) * (sprite.height/2))
-            end
-
-            love.graphics.draw(sprite.image, x + ox, y + oy, sprite.rotation)
+            love.graphics.draw(sprite.image, x + ox, y + oy, 0)
 
             if sprite.goal then
                 love.graphics.line(x + ox + sprite.width / 2, y + oy + sprite.height/2, sprite.goal.x + ox + sprite.width/2, sprite.goal.y + oy + sprite.height/2)
@@ -684,6 +682,11 @@ function state:update(dt)
 
     ecs:update(dt, processingSystems)
 
+    do
+        --local vars = player.actor:GetTransformer():GetVariables('walk')
+        --vars.time = vars.time + dt
+        player.actor:Update(dt)
+    end
 
     do
         local x1, y1 = player.x, player.y
@@ -738,6 +741,11 @@ function state:draw()
     --player.drawVision(0)
     --love.graphics.setColor(255, 255, 255, 255)
     camera:detach()
+
+    love.graphics.push()
+    love.graphics.translate(gw/2, gh/2)
+    player.actor:Draw()
+    love.graphics.pop()
 
     do
         local gunstatus = ''
